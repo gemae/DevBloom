@@ -1,0 +1,237 @@
+html{
+    height:100%;
+}
+
+body,html{
+min-width: 310px;
+position: relative;
+}
+
+nav{
+    min-width: 310px;
+}
+
+nav img{
+    width: 70px;
+    height: 50px;
+}
+
+.nav-item{
+    transition: .5s;
+}
+.nav-item:hover{
+    transform: scale(1.2);
+    transition: .5s;
+}
+
+.topcont{
+    height: 100vh;
+    background-image: url("img/bgmountain.jpg");    
+    /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}.top-btn{
+    width: 10rem;
+    padding: 1rem 0;
+}
+
+.caption-cont a{
+    margin-top: 1em;
+ }
+ .caption-cont p{
+    font-size: .9rem;
+ }
+
+.fourthcont hr, .thirdcont hr,.fifthcont hr, .sixthcont hr{
+    width: 3rem;
+    height: .1rem;
+}
+.fifthcont .card{
+    min-height: 25em;
+}
+
+.fifthcont .card:hover{
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+.fifthcont .card-body a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.fifthcont a::before{
+    content: "";
+    width: 0;
+    height: .1rem;
+    position: absolute;
+    bottom: -.2rem;
+    right: 50%;
+    transition: ease-out 400ms;
+}
+.fifthcont a::after{
+    content: "";
+    width: 0;
+    height: .1rem;
+    position: absolute;
+    bottom: -.2rem;
+    left: 50%;
+    transition: ease-out 400ms;
+  
+}
+
+.fifthcont a:hover::after, .fifthcont a:hover::before{
+    transition: ease-out 300ms; 
+    background-color: #5bc0de;
+    width: 40%;
+}
+.sixthcont input[type=text], .sixthcont input[type=number]{
+    width:23rem;
+}
+
+.sixthcont .container{
+    width:790px;
+}
+
+
+
+.lastcont .img-glassdoor{
+    width: 10rem;
+}
+.lastcont .img-goodfirms{
+    width: 13rem;
+}
+
+.lastcont .firstcont *{
+    padding:.2rem 0;
+}
+
+.lastcont .secondcont *, .lastcont .thirdcont *{
+    padding: .3rem 0;
+}
+
+
+.lastcont input[type=email]{
+    width: 270px;
+}
+
+
+.lastcont .socialbtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.lastcont .socialbtn a{
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size: 2rem;
+    margin: .5rem;
+    outline: #5bc0de;
+}
+
+.lastcont .socialbtn a:hover{
+    background-color: white;
+    color: #55b0cc;
+}
+.page-footer{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}
+footer img{
+    width: 10rem;
+    height: 7rem;
+}
+footer a, footer p{
+    font-size: 1.2rem;
+}
+footer div a{color: white;}
+footer a:hover{
+color:  #5bc0de;
+}
+
+@media screen and (max-width: 1200px){
+    footer a, footer p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    
+    .caption-cont h1{
+        font-size: 2.5rem;
+     
+    }
+    .lastcont .thirdcont{
+        display: block;
+    }
+    .lastcont .thirdcont .socialbtn{
+        position: relative;
+        display: flex;
+    }
+    footer div a,footer p{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 768px){
+   
+     .caption-cont a{
+        width: 8rem;
+       font-size: .8rem;
+    }
+   
+    .fourthcont p{
+       font-size: 13px;
+    }
+    .fifthcont .divider{
+        margin-bottom: 3rem;
+    }
+    
+    .sixthcont input[type=text],  .sixthcont input[type=number]{
+        width:15rem;
+    }
+    footer img{
+        width: 8rem;
+        height: 5rem;
+    }
+    footer{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width: 765px){
+    .sixthcont input[type=text], .sixthcont input[type=number]{
+        width:100%;
+    }
+    .sixthcont .container{
+        width:100%;
+    }
+    .sixthcont label{
+        width: 100%;
+    }
+  
+}
+
+@media screen and (max-width: 576px){
+    .fourthcont img{
+        width: 65px;
+        height: 65px
+    }
+    .fourthcont .flex-cont{
+        display: block;
+    }
+    .nav-item:hover{
+        transform: none;
+        border-left: 1.3px solid rgb(170, 203, 241);
+    }
+
+   
+
+}
