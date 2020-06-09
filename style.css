@@ -94,7 +94,9 @@ nav img{
     width:790px;
 }
 
-
+.lastcont div a{
+    text-decoration: none;
+}
 
 .lastcont .img-glassdoor{
     width: 10rem;
@@ -206,6 +208,16 @@ color:  #5bc0de;
     }
     
 }
+@media screen and (max-width: 822px){
+    .fifthcont a{
+       display: block;
+    }
+    .fifthcont a:hover::after, .fifthcont a:hover::before{
+        transition: ease-out 300ms; 
+        background-color: #5bc0de;
+        width: 20%;
+    }
+}
 @media screen and (max-width: 765px){
     .sixthcont input[type=text], .sixthcont input[type=number]{
         width:100%;
@@ -231,7 +243,9 @@ color:  #5bc0de;
         transform: none;
         border-left: 1.3px solid rgb(170, 203, 241);
     }
-
+    footer div a,footer p{
+        font-size: .8rem;
+    }
    
 
 }
