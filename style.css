@@ -93,7 +93,10 @@ nav img{
 .sixthcont .container{
     width:790px;
 }
+.lastcont{
 
+    padding-bottom: 4rem;
+}
 .lastcont div a{
     text-decoration: none;
 }
@@ -228,7 +231,10 @@ color:  #5bc0de;
     .sixthcont label{
         width: 100%;
     }
-  
+    .lastcont{
+
+        padding-bottom:0;
+    }
 }
 
 @media screen and (max-width: 576px){
